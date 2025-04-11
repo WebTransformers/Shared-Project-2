@@ -8,20 +8,14 @@ function myFunction() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
-  const nameInput = document.getElementById("fullname");
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
+/*Detects CapsLock*/
+var input = document.getElementById("email")
+var text = document.getElementById("text")
+input.addEventListener("keyup", function(event) {
 
-    const userName = nameInput.value.trim();
-
-    if (userName) {
-      alert(`Thanks for subscribing, ${userName}!`); 
-    } else {
-      alert("Thanks for subscribing!");
-    }
-
-    form.reset();
-  });
+if (event.getModifierState("CapsLock")) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none"
+  }
 });
