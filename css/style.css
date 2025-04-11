@@ -167,6 +167,7 @@ form button {
 form button:hover {
   background-color: #001c5b;
 }
+
 .tagline {
   text-align: center;
   color: #666;
@@ -301,6 +302,7 @@ form button:hover {
 .recipe-highlights p {
   margin: 5px 0;
 }
+                  
 
 @media screen and (min-width: 768px) {  
   .container {
